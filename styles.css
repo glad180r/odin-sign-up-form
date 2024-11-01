@@ -1,0 +1,38 @@
+@font-face {
+    font-family: Norse Bold;
+    src: url(assets/Norse-Bold.otf);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Norse Bold;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+
+    --aside-width: 30%;
+}
+
+aside{
+    height: 100%;
+    width: var(--aside-width);
+
+    display: flex;
+}
+
+.logo-section{
+    background-color: white;
+    height: 45px;
+}
+
+main{
+    height: 100%;
+    width: calc(100% - var(--aside-width));
+}
+
+
+
