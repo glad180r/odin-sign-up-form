@@ -10,29 +10,52 @@
 }
 
 body{
+    position: absolute;
     height: 100vh;
     width: 100vw;
     display: flex;
 
-    --aside-width: 30%;
+    --aside-width: 30vw;
+}
+
+.bg-img{
+    width: var(--aside-width);
 }
 
 aside{
     height: 100%;
     width: var(--aside-width);
-
     display: flex;
 }
 
 .logo-section{
-    background-color: white;
-    height: 45px;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 5.5rem;
+    width: var(--aside-width);
+    font-size: 4.5rem;
+
+    position: absolute;
+    top: 22.5%;
+    left: 0px;
+    color: white;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.logo{
+    height: 4.25rem;
 }
 
 main{
     height: 100%;
     width: calc(100% - var(--aside-width));
+
 }
+
+
 
 
 
