@@ -7,6 +7,7 @@
     box-sizing: border-box;
     margin: 0;
     font-family: Norse Bold;
+    --alternate-black: rgb(6,5,4);
 }
 
 body{
@@ -52,7 +53,30 @@ aside{
 main{
     height: 100%;
     width: calc(100% - var(--aside-width));
+    display: flex;
+    flex-direction: column;
+}
 
+
+section.top{
+    height: 33.6vh;
+    width: 100%;
+    background-color: var(--alternate-black);
+    border: 1px solid lightblue;
+}
+
+section.middle{
+    height: 30vh;
+    width: 100%;
+    background-color: black;
+    border: 1px solid lightpink;
+}
+
+section.bottom{
+    height: calc(100vh - 33.6vh - 30vh);
+    width: 100%;
+    background-color: var(--alternate-black);
+    border: 1px solid lightgreen;
 }
 
 
