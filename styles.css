@@ -1,13 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @font-face {
     font-family: Norse Bold;
     src: url(assets/Norse-Bold.otf);
 }
 
+
 *{
     box-sizing: border-box;
     margin: 0;
-    font-family: Norse Bold;
-    --alternate-black: rgb(6,5,4);
+    --alternate-black: rgba(6, 5, 4, 0.892);
 }
 
 body{
@@ -15,7 +16,6 @@ body{
     height: 100vh;
     width: 100vw;
     display: flex;
-
     --aside-width: 30vw;
 }
 
@@ -27,6 +27,14 @@ aside{
     height: 100%;
     width: var(--aside-width);
     display: flex;
+    font-family: "Encode Sans Condensed", serif;
+}
+
+.img-credit{
+    position: absolute;
+    color: white;
+    bottom: 10px;
+    left: 12.5%;
 }
 
 .logo-section{
@@ -35,6 +43,7 @@ aside{
     height: 5.5rem;
     width: var(--aside-width);
     font-size: 4.5rem;
+    font-family: Norse Bold;
 
     position: absolute;
     top: 22.5%;
@@ -55,6 +64,7 @@ main{
     width: calc(100% - var(--aside-width));
     display: flex;
     flex-direction: column;
+    color: white;
 }
 
 
@@ -62,21 +72,29 @@ section.top{
     height: 33.6vh;
     width: 100%;
     background-color: var(--alternate-black);
-    border: 1px solid lightblue;
+    font-family: "Encode Sans Condensed", serif;
+    padding-top: 10%;
+    padding-left: 30px;
+}
+
+.top-text{
+    width: 45ch;
+}
+
+.top-text-lower{
+    padding-top: 20px;
 }
 
 section.middle{
     height: 30vh;
     width: 100%;
     background-color: black;
-    border: 1px solid lightpink;
 }
 
 section.bottom{
     height: calc(100vh - 33.6vh - 30vh);
     width: 100%;
     background-color: var(--alternate-black);
-    border: 1px solid lightgreen;
 }
 
 
